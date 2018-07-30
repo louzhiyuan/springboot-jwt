@@ -1,9 +1,8 @@
-package com.demo.jwt.demo.repository;
+package com.demo.jwt.demo.dao;
 
 import com.demo.jwt.demo.entity.SysUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UserRepository extends JpaRepository<SysUser,Long>{
-
+public interface SysUserRepository extends JpaRepository<SysUser,Long>{
     SysUser findByUsername(String username);
 }
